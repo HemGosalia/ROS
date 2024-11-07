@@ -1,0 +1,69 @@
+[0.000000] (-) TimerEvent: {}
+[0.000601] (-) JobUnselected: {'identifier': 'lab4'}
+[0.000628] (-) JobUnselected: {'identifier': 'lab6'}
+[0.000645] (-) JobUnselected: {'identifier': 'my_package'}
+[0.000662] (-) JobUnselected: {'identifier': 'rc_description'}
+[0.000683] (-) JobUnselected: {'identifier': 'robot_arm_urdf'}
+[0.000697] (-) JobUnselected: {'identifier': 'turtle_control'}
+[0.000711] (-) JobUnselected: {'identifier': 'urdf_tutorial'}
+[0.000727] (lab7) JobQueued: {'identifier': 'lab7', 'dependencies': OrderedDict()}
+[0.000743] (lab7) JobStarted: {'identifier': 'lab7'}
+[0.099907] (-) TimerEvent: {}
+[0.200167] (-) TimerEvent: {}
+[0.300620] (-) TimerEvent: {}
+[0.400891] (-) TimerEvent: {}
+[0.433767] (lab7) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/lab7', 'build', '--build-base', '/home/heisenberg_31/ros2_ws/build/lab7/build', 'install', '--record', '/home/heisenberg_31/ros2_ws/build/lab7/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/heisenberg_31/ros2_ws/src/lab7', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'heisenberg_31', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/heisenberg_31', 'OLDPWD': '/home/heisenberg_31', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1875', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/heisenberg_31/ros2_ws/install:/home/heisenberg_31/ros2_ws/src/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'heisenberg_31', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'heisenberg_31', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/CHITTI:@/tmp/.ICE-unix/1845,unix/CHITTI:/tmp/.ICE-unix/1845', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c9016757_f477_4348_96a4_9e5b7be9745f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_IN', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.D6WXT2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.407', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/heisenberg_31/ros2_ws/install/lab7:/home/heisenberg_31/ros2_ws/src/install/turtle_control:/home/heisenberg_31/ros2_ws/src/install/lab4:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/heisenberg_31/ros2_ws/build/lab7', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/heisenberg_31/ros2_ws/build/lab7/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/heisenberg_31/ros2_ws/install/lab7/lib/python3.10/site-packages:/home/heisenberg_31/ros2_ws/install/lab7/lib/python3.10/site-packages:/home/heisenberg_31/ros2_ws/src/install/turtle_control/lib/python3.10/site-packages:/home/heisenberg_31/ros2_ws/src/install/lab4/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.501005] (-) TimerEvent: {}
+[0.599609] (lab7) StdoutLine: {'line': b'running egg_info\n'}
+[0.599943] (lab7) StdoutLine: {'line': b'creating ../../build/lab7/lab7.egg-info\n'}
+[0.600124] (lab7) StdoutLine: {'line': b'writing ../../build/lab7/lab7.egg-info/PKG-INFO\n'}
+[0.600285] (lab7) StdoutLine: {'line': b'writing dependency_links to ../../build/lab7/lab7.egg-info/dependency_links.txt\n'}
+[0.600403] (lab7) StdoutLine: {'line': b'writing entry points to ../../build/lab7/lab7.egg-info/entry_points.txt\n'}
+[0.600464] (lab7) StdoutLine: {'line': b'writing requirements to ../../build/lab7/lab7.egg-info/requires.txt\n'}
+[0.600512] (lab7) StdoutLine: {'line': b'writing top-level names to ../../build/lab7/lab7.egg-info/top_level.txt\n'}
+[0.600582] (lab7) StdoutLine: {'line': b"writing manifest file '../../build/lab7/lab7.egg-info/SOURCES.txt'\n"}
+[0.601091] (-) TimerEvent: {}
+[0.601629] (lab7) StdoutLine: {'line': b"reading manifest file '../../build/lab7/lab7.egg-info/SOURCES.txt'\n"}
+[0.602080] (lab7) StdoutLine: {'line': b"writing manifest file '../../build/lab7/lab7.egg-info/SOURCES.txt'\n"}
+[0.602164] (lab7) StdoutLine: {'line': b'running build\n'}
+[0.602212] (lab7) StdoutLine: {'line': b'running build_py\n'}
+[0.602289] (lab7) StdoutLine: {'line': b'creating /home/heisenberg_31/ros2_ws/build/lab7/build\n'}
+[0.602351] (lab7) StdoutLine: {'line': b'creating /home/heisenberg_31/ros2_ws/build/lab7/build/lib\n'}
+[0.602420] (lab7) StdoutLine: {'line': b'creating /home/heisenberg_31/ros2_ws/build/lab7/build/lib/lab7\n'}
+[0.602499] (lab7) StdoutLine: {'line': b'copying lab7/__init__.py -> /home/heisenberg_31/ros2_ws/build/lab7/build/lib/lab7\n'}
+[0.602608] (lab7) StdoutLine: {'line': b'running install\n'}
+[0.602799] (lab7) StdoutLine: {'line': b'running install_lib\n'}
+[0.603212] (lab7) StdoutLine: {'line': b'creating /home/heisenberg_31/ros2_ws/install/lab7/lib/python3.10/site-packages/lab7\n'}
+[0.603289] (lab7) StdoutLine: {'line': b'copying /home/heisenberg_31/ros2_ws/build/lab7/build/lib/lab7/__init__.py -> /home/heisenberg_31/ros2_ws/install/lab7/lib/python3.10/site-packages/lab7\n'}
+[0.603634] (lab7) StdoutLine: {'line': b'byte-compiling /home/heisenberg_31/ros2_ws/install/lab7/lib/python3.10/site-packages/lab7/__init__.py to __init__.cpython-310.pyc\n'}
+[0.603788] (lab7) StdoutLine: {'line': b'running install_data\n'}
+[0.603850] (lab7) StdoutLine: {'line': b'creating /home/heisenberg_31/ros2_ws/install/lab7/share/ament_index\n'}
+[0.603928] (lab7) StdoutLine: {'line': b'creating /home/heisenberg_31/ros2_ws/install/lab7/share/ament_index/resource_index\n'}
+[0.603983] (lab7) StdoutLine: {'line': b'creating /home/heisenberg_31/ros2_ws/install/lab7/share/ament_index/resource_index/packages\n'}
+[0.604027] (lab7) StdoutLine: {'line': b'copying resource/lab7 -> /home/heisenberg_31/ros2_ws/install/lab7/share/ament_index/resource_index/packages\n'}
+[0.604095] (lab7) StdoutLine: {'line': b'copying package.xml -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7\n'}
+[0.604174] (lab7) StdoutLine: {'line': b'creating /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/launch\n'}
+[0.604223] (lab7) StdoutLine: {'line': b'copying launch/arm_rviz.launch.py -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/launch\n'}
+[0.604290] (lab7) StdoutLine: {'line': b'copying launch/arm_gazebo.launch.py -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/launch\n'}
+[0.604379] (lab7) StdoutLine: {'line': b'creating /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/urdf\n'}
+[0.604445] (lab7) StdoutLine: {'line': b'copying urdf/robot_arm.urdf -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/urdf\n'}
+[0.604492] (lab7) StdoutLine: {'line': b'creating /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes\n'}
+[0.604554] (lab7) StdoutLine: {'line': b'copying meshes/base_link.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes\n'}
+[0.604656] (lab7) StdoutLine: {'line': b'copying meshes/link_4.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes\n'}
+[0.604789] (lab7) StdoutLine: {'line': b'copying meshes/link_2.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes\n'}
+[0.604896] (lab7) StdoutLine: {'line': b'copying meshes/link_1.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes\n'}
+[0.605025] (lab7) StdoutLine: {'line': b'copying meshes/link_6.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes\n'}
+[0.605122] (lab7) StdoutLine: {'line': b'copying meshes/link_5.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes\n'}
+[0.605249] (lab7) StdoutLine: {'line': b'copying meshes/link_7.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes\n'}
+[0.605362] (lab7) StdoutLine: {'line': b'copying meshes/link_3.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes\n'}
+[0.605515] (lab7) StdoutLine: {'line': b'creating /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/textures\n'}
+[0.605584] (lab7) StdoutLine: {'line': b'creating /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/config\n'}
+[0.605662] (lab7) StdoutLine: {'line': b'copying config/arm.yaml -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/config\n'}
+[0.605713] (lab7) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.606788] (lab7) StdoutLine: {'line': b'Copying ../../build/lab7/lab7.egg-info to /home/heisenberg_31/ros2_ws/install/lab7/lib/python3.10/site-packages/lab7-0.0.0-py3.10.egg-info\n'}
+[0.607474] (lab7) StdoutLine: {'line': b'running install_scripts\n'}
+[0.621465] (lab7) StdoutLine: {'line': b'Installing control script to /home/heisenberg_31/ros2_ws/install/lab7/lib/lab7\n'}
+[0.621764] (lab7) StdoutLine: {'line': b"writing list of installed files to '/home/heisenberg_31/ros2_ws/build/lab7/install.log'\n"}
+[0.639250] (lab7) CommandEnded: {'returncode': 0}
+[0.645866] (lab7) JobEnded: {'identifier': 'lab7', 'rc': 0}
+[0.646322] (-) EventReactorShutdown: {}

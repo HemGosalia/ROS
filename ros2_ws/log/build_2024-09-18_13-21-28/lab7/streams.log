@@ -1,0 +1,51 @@
+[0.435s] Invoking command in '/home/heisenberg_31/ros2_ws/src/lab7': PYTHONPATH=/home/heisenberg_31/ros2_ws/build/lab7/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/heisenberg_31/ros2_ws/install/lab7/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lab7 build --build-base /home/heisenberg_31/ros2_ws/build/lab7/build install --record /home/heisenberg_31/ros2_ws/build/lab7/install.log --single-version-externally-managed install_data
+[0.599s] running egg_info
+[0.599s] creating ../../build/lab7/lab7.egg-info
+[0.599s] writing ../../build/lab7/lab7.egg-info/PKG-INFO
+[0.600s] writing dependency_links to ../../build/lab7/lab7.egg-info/dependency_links.txt
+[0.600s] writing entry points to ../../build/lab7/lab7.egg-info/entry_points.txt
+[0.600s] writing requirements to ../../build/lab7/lab7.egg-info/requires.txt
+[0.600s] writing top-level names to ../../build/lab7/lab7.egg-info/top_level.txt
+[0.600s] writing manifest file '../../build/lab7/lab7.egg-info/SOURCES.txt'
+[0.601s] reading manifest file '../../build/lab7/lab7.egg-info/SOURCES.txt'
+[0.601s] writing manifest file '../../build/lab7/lab7.egg-info/SOURCES.txt'
+[0.601s] running build
+[0.601s] running build_py
+[0.602s] creating /home/heisenberg_31/ros2_ws/build/lab7/build
+[0.602s] creating /home/heisenberg_31/ros2_ws/build/lab7/build/lib
+[0.602s] creating /home/heisenberg_31/ros2_ws/build/lab7/build/lib/lab7
+[0.602s] copying lab7/__init__.py -> /home/heisenberg_31/ros2_ws/build/lab7/build/lib/lab7
+[0.602s] running install
+[0.602s] running install_lib
+[0.602s] creating /home/heisenberg_31/ros2_ws/install/lab7/lib/python3.10/site-packages/lab7
+[0.603s] copying /home/heisenberg_31/ros2_ws/build/lab7/build/lib/lab7/__init__.py -> /home/heisenberg_31/ros2_ws/install/lab7/lib/python3.10/site-packages/lab7
+[0.603s] byte-compiling /home/heisenberg_31/ros2_ws/install/lab7/lib/python3.10/site-packages/lab7/__init__.py to __init__.cpython-310.pyc
+[0.603s] running install_data
+[0.603s] creating /home/heisenberg_31/ros2_ws/install/lab7/share/ament_index
+[0.603s] creating /home/heisenberg_31/ros2_ws/install/lab7/share/ament_index/resource_index
+[0.603s] creating /home/heisenberg_31/ros2_ws/install/lab7/share/ament_index/resource_index/packages
+[0.603s] copying resource/lab7 -> /home/heisenberg_31/ros2_ws/install/lab7/share/ament_index/resource_index/packages
+[0.603s] copying package.xml -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7
+[0.603s] creating /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/launch
+[0.604s] copying launch/arm_rviz.launch.py -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/launch
+[0.604s] copying launch/arm_gazebo.launch.py -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/launch
+[0.604s] creating /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/urdf
+[0.604s] copying urdf/robot_arm.urdf -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/urdf
+[0.604s] creating /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes
+[0.604s] copying meshes/base_link.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes
+[0.604s] copying meshes/link_4.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes
+[0.604s] copying meshes/link_2.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes
+[0.604s] copying meshes/link_1.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes
+[0.604s] copying meshes/link_6.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes
+[0.604s] copying meshes/link_5.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes
+[0.605s] copying meshes/link_7.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes
+[0.605s] copying meshes/link_3.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes
+[0.605s] creating /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/textures
+[0.605s] creating /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/config
+[0.605s] copying config/arm.yaml -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/config
+[0.605s] running install_egg_info
+[0.606s] Copying ../../build/lab7/lab7.egg-info to /home/heisenberg_31/ros2_ws/install/lab7/lib/python3.10/site-packages/lab7-0.0.0-py3.10.egg-info
+[0.607s] running install_scripts
+[0.621s] Installing control script to /home/heisenberg_31/ros2_ws/install/lab7/lib/lab7
+[0.621s] writing list of installed files to '/home/heisenberg_31/ros2_ws/build/lab7/install.log'
+[0.639s] Invoked command in '/home/heisenberg_31/ros2_ws/src/lab7' returned '0': PYTHONPATH=/home/heisenberg_31/ros2_ws/build/lab7/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/heisenberg_31/ros2_ws/install/lab7/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lab7 build --build-base /home/heisenberg_31/ros2_ws/build/lab7/build install --record /home/heisenberg_31/ros2_ws/build/lab7/install.log --single-version-externally-managed install_data

@@ -1,0 +1,49 @@
+running egg_info
+creating ../../build/lab7/lab7.egg-info
+writing ../../build/lab7/lab7.egg-info/PKG-INFO
+writing dependency_links to ../../build/lab7/lab7.egg-info/dependency_links.txt
+writing entry points to ../../build/lab7/lab7.egg-info/entry_points.txt
+writing requirements to ../../build/lab7/lab7.egg-info/requires.txt
+writing top-level names to ../../build/lab7/lab7.egg-info/top_level.txt
+writing manifest file '../../build/lab7/lab7.egg-info/SOURCES.txt'
+reading manifest file '../../build/lab7/lab7.egg-info/SOURCES.txt'
+writing manifest file '../../build/lab7/lab7.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/heisenberg_31/ros2_ws/build/lab7/build
+creating /home/heisenberg_31/ros2_ws/build/lab7/build/lib
+creating /home/heisenberg_31/ros2_ws/build/lab7/build/lib/lab7
+copying lab7/__init__.py -> /home/heisenberg_31/ros2_ws/build/lab7/build/lib/lab7
+running install
+running install_lib
+creating /home/heisenberg_31/ros2_ws/install/lab7/lib/python3.10/site-packages/lab7
+copying /home/heisenberg_31/ros2_ws/build/lab7/build/lib/lab7/__init__.py -> /home/heisenberg_31/ros2_ws/install/lab7/lib/python3.10/site-packages/lab7
+byte-compiling /home/heisenberg_31/ros2_ws/install/lab7/lib/python3.10/site-packages/lab7/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/heisenberg_31/ros2_ws/install/lab7/share/ament_index
+creating /home/heisenberg_31/ros2_ws/install/lab7/share/ament_index/resource_index
+creating /home/heisenberg_31/ros2_ws/install/lab7/share/ament_index/resource_index/packages
+copying resource/lab7 -> /home/heisenberg_31/ros2_ws/install/lab7/share/ament_index/resource_index/packages
+copying package.xml -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7
+creating /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/launch
+copying launch/arm_rviz.launch.py -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/launch
+copying launch/arm_gazebo.launch.py -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/launch
+creating /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/urdf
+copying urdf/robot_arm.urdf -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/urdf
+creating /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes
+copying meshes/base_link.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes
+copying meshes/link_4.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes
+copying meshes/link_2.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes
+copying meshes/link_1.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes
+copying meshes/link_6.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes
+copying meshes/link_5.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes
+copying meshes/link_7.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes
+copying meshes/link_3.STL -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/meshes
+creating /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/textures
+creating /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/config
+copying config/arm.yaml -> /home/heisenberg_31/ros2_ws/install/lab7/share/lab7/config
+running install_egg_info
+Copying ../../build/lab7/lab7.egg-info to /home/heisenberg_31/ros2_ws/install/lab7/lib/python3.10/site-packages/lab7-0.0.0-py3.10.egg-info
+running install_scripts
+Installing control script to /home/heisenberg_31/ros2_ws/install/lab7/lib/lab7
+writing list of installed files to '/home/heisenberg_31/ros2_ws/build/lab7/install.log'

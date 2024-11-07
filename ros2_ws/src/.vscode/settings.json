@@ -1,0 +1,16 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/heisenberg_31/ros2_ws/install/turtle_control/lib/python3.10/site-packages",
+        "/home/heisenberg_31/ros2_ws/install/my_package/lib/python3.10/site-packages",
+        "/home/heisenberg_31/ros2_ws/src/install/turtle_control/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/heisenberg_31/ros2_ws/install/turtle_control/lib/python3.10/site-packages",
+        "/home/heisenberg_31/ros2_ws/install/my_package/lib/python3.10/site-packages",
+        "/home/heisenberg_31/ros2_ws/src/install/turtle_control/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

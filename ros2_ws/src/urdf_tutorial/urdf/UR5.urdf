@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<robot name="UR5">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.00036702 -0.00036758 0.016561" rpy="0 0 0" />
+      <mass value="4.0" />
+      <inertia ixx="0.00060258" ixy="1.7502E-05" ixz="1.5277E-06" iyy="0.00060261" iyz="1.5241E-06" izz="0.0010709" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/heisenberg_31/ros2_ws/src/urdf_tutorial/meshes/base_link.STL" />
+      </geometry>
+      <material name="White">
+        <color rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/heisenberg_31/ros2_ws/src/urdf_tutorial/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="shoulder_link">
+    <inertial>
+      <origin xyz="-0.078966 0.016439 -6.3565E-06" rpy="0 0 0" />
+      <mass value="3.7" />
+      <inertia ixx="0.0028298" ixy="0.00031932" ixz="-1.3132E-07" iyy="0.002538" iyz="4.4907E-07" izz="0.0026207" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/heisenberg_31/ros2_ws/src/urdf_tutorial/meshes/shoulder_link.STL" />
+      </geometry>
+      <material name="Black">
+        <color rgba="0 0 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/heisenberg_31/ros2_ws/src/urdf_tutorial/meshes/shoulder_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="shoulder_pan_joint" type="revolute">
+    <origin xyz="0 0 0.0099916" rpy="1.5708 1.5708 0" />
+    <parent link="base_link" />
+    <child link="shoulder_link" />
+    <axis xyz="1 0 0" />
+    <limit lower="-6.2832" upper="6.2832" effort="300" velocity="3" />
+    <dynamics damping="10" friction="1" />
+  </joint>
+
+  <link name="upper_arm_link">
+    <inertial>
+      <origin xyz="-0.21652 0.079293 8.661E-08" rpy="0 0 0" />
+      <mass value="8.393" />
+      <inertia ixx="0.0063671" ixy="-9.2154E-12" ixz="9.0018E-07" iyy="0.021824" iyz="-2.2572E-07" izz="0.021327" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/heisenberg_31/ros2_ws/src/urdf_tutorial/meshes/upper_arm_link.STL" />
+      </geometry>
+      <material name="Blue">
+        <color rgba="0 1 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/heisenberg_31/ros2_ws/src/urdf_tutorial/meshes/upper_arm_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="shoulder_lift_joint" type="revolute">
+    <origin xyz="-0.080008 0.053821 0" rpy="0 0 0" />
+    <parent link="shoulder_link" />
+    <child link="upper_arm_link" />
+    <axis xyz="0 -1 0" />
+    <limit lower="-1.57" upper="1.57" effort="200" velocity="3" />
+    <dynamics damping="10" friction="1" />
+  </joint>
+
+  <link name="forearm_link">
+    <inertial>
+      <origin xyz="-0.1739 -0.033049 -2.6025E-06" rpy="0 0 0" />
+      <mass value="2.275" />
+      <inertia ixx="0.002241" ixy="-0.00011285" ixz="4.2229E-07" iyy="0.011808" iyz="-2.6928E-07" izz="0.011655" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/heisenberg_31/ros2_ws/src/urdf_tutorial/meshes/forearm_link.STL" />
+      </geometry>
+      <material name="Green">
+        <color rgba="0.5 0 0.5 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/heisenberg_31/ros2_ws/src/urdf_tutorial/meshes/forearm_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="elbow_joint" type="revolute">
+    <origin xyz="-0.425 0 0" rpy="0 0 0" />
+    <parent link="upper_arm_link" />
+    <child link="forearm_link" />
+    <axis xyz="0 1 0" />
+    <limit lower="-6.2832" upper="6.2832" effort="200" velocity="3" />
+    <dynamics damping="10" friction="1" />
+  </joint>
+
+  <link name="wrist_1_link">
+    <inertial>
+      <origin xyz="0.003753 0.044978 1.2618E-05" rpy="0 0 0" />
+      <mass value="1.219" />
+      <inertia ixx="0.00041141" ixy="4.2784E-05" ixz="-2.8598E-07" iyy="0.00036744" iyz="4.089E-07" izz="0.000387" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/heisenberg_31/ros2_ws/src/urdf_tutorial/meshes/wrist_1_link.STL" />
+      </geometry>
+      <material name="Purple">
+        <color rgba="1 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/heisenberg_31/ros2_ws/src/urdf_tutorial/meshes/wrist_1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="wrist_1_joint" type="revolute">
+    <origin xyz="-0.39225 0 0" rpy="0 0 0" />
+    <parent link="forearm_link" />
+    <child link="wrist_1_link" />
+    <axis xyz="0 -1 0" />
+    <limit lower="-6.2832" upper="6.2832" effort="200" velocity="3" />
+    <dynamics damping="10" friction="1" />
+  </joint>
+
+  <link name="wrist_2_link">
+    <inertial>
+      <origin xyz="-0.083749 -0.0037532 -1.2446E-05" rpy="0 0 0" />
+      <mass value="1.219" />
+      <inertia ixx="0.00036744" ixy="4.2782E-05" ixz="4.1013E-07" iyy="0.0004114" iyz="-2.8709E-07" izz="0.000387" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/heisenberg_31/ros2_ws/src/urdf_tutorial/meshes/wrist_2_link.STL" />
+      </geometry>
+      <material name="Red">
+        <color rgba="1 0.5 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/heisenberg_31/ros2_ws/src/urdf_tutorial/meshes/wrist_2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="wrist_2_joint" type="revolute">
+    <origin xyz="0 0.056149 0" rpy="0 0 0" />
+    <parent link="wrist_1_link" />
+    <child link="wrist_2_link" />
+    <axis xyz="1 0 0" />
+    <limit lower="-6.2832" upper="6.2832" effort="200" velocity="3" />
+    <dynamics damping="10" friction="1" />
+  </joint>
+
+  <link name="wrist_3_link">
+    <inertial>
+      <origin xyz="-7.8282E-05 0.018179 0.00011982" rpy="0 0 0" />
+      <mass value="0.1879" />
+      <inertia ixx="6.8269E-05" ixy="5.7754E-08" ixz="-3.2009E-07" iyy="0.00011604" iyz="-8.84E-08" izz="6.8551E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/heisenberg_31/ros2_ws/src/urdf_tutorial/meshes/wrist_3_link.STL" />
+      </geometry>
+      <material name="Orange">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/heisenberg_31/ros2_ws/src/urdf_tutorial/meshes/wrist_3_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="wrist_3_joint" type="revolute">
+    <origin xyz="-0.09492 0.041547 0" rpy="3.1416 0 3.1416" />
+    <parent link="wrist_2_link" />
+    <child link="wrist_3_link" />
+    <axis xyz="0 -1 0" />
+    <limit lower="-6.2832" upper="6.2832" effort="100" velocity="3" />
+    <dynamics damping="10" friction="1" />
+  </joint>
+
+  <link name="world">
+    <!-- No inertial properties required -->
+  </link>
+
+  <joint name="world_to_base" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <gazebo reference="base_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="shoulder_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <gazebo reference="upper_arm_link">
+    <material>Gazebo/Green</material>
+  </gazebo>
+
+  <gazebo reference="forearm_link">
+    <material>Gazebo/Purple</material>
+  </gazebo>
+
+  <gazebo reference="wrist_1_link">
+    <material>Gazebo/Red</material>
+  </gazebo>
+
+  <gazebo reference="wrist_2_link">
+    <material>Gazebo/Orange</material>
+  </gazebo>
+
+  <gazebo reference="wrist_3_link">
+    <material>Gazebo/White</material>
+  </gazebo>
+
+  <gazebo>
+    <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+      <robot_sim_type>gazebo_ros2_control/GazeboSystem</robot_sim_type>
+      <parameters>/home/heisenberg_31/ros2_ws/src/urdf_tutorial/config/ur5_control.yaml</parameters>
+    </plugin>
+  </gazebo>
+
+  <ros2_control name="GazeboSystem" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+
+    <joint name="shoulder_pan_joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_position">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="shoulder_lift_joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_position">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="elbow_joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_position">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="wrist_1_joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_position">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="wrist_2_joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_position">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="wrist_3_joint">
+      <command_interface name="position"/>
+      <state_interface name="position">
+        <param name="initial_position">0.0</param>
+      </state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+  <transmission name="base_link_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="shoulder_pan_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="base_link_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="shoulder_link_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="shoulder_lift_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="shoulder_link_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="upper_arm_link_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="elbow_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="upper_arm_link_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="forearm_link_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wrist_1_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="forearm_link_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="wrist_1_link_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wrist_2_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wrist_1_link_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="wrist_2_link_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wrist_3_joint">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wrist_2_link_motor">
+      <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <gazebo reference="shoulder_link">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="upper_arm_link">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="forearm_link">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="wrist_1_link">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="wrist_2_link">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+
+  <gazebo reference="wrist_3_link">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+</robot>
